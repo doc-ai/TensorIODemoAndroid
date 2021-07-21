@@ -1,7 +1,7 @@
 package com.example.tensorioandroiddemo
 
+// IMPORTANT: Import tensorio modelbundle
 import ai.doc.tensorio.core.modelbundle.ModelBundle
-import ai.doc.tensorio.core.utilities.ClassificationHelper
 import android.content.Context
 import android.graphics.BitmapFactory
 import android.net.Uri
@@ -61,6 +61,7 @@ class MainActivity : AppCompatActivity() {
     }
   }
 
+  // IMPORTANT: Import Process Image with TensorIO
   fun processImage() {
     // Load the Model
     val bundle = ModelBundle.bundleWithAsset(applicationContext, "phenomenal-face.tiobundle")
